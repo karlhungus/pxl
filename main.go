@@ -1,7 +1,8 @@
-package pxl
+package main
 
 import (
 	"fmt"
+	"github.com/karlhungus/lib_pxl"
 	"os"
 )
 
@@ -12,9 +13,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	Init()
-	defer Close()
+	lib_pxl.Init()
+	defer lib_pxl.Close()
 	for i := 1; i < len(os.Args); i++ {
-		DisplayFile(os.Args[i])
+		lib_pxl.DisplayFile(os.Args[i])
 	}
 }

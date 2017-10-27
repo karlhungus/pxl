@@ -1,3 +1,6 @@
+This just demonstrates using lib_pxl...
+
+
 # pxl
 
 pxl is a little hack to display images in the terminal.
